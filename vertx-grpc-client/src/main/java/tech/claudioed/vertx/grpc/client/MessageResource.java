@@ -25,7 +25,7 @@ public class MessageResource extends AbstractVerticle {
     Router router = Router.router(this.vertx);
     router.route().handler(BodyHandler.create());
     router.get("/istio/message").handler(this::processMessage);
-    this.vertx.createHttpServer().requestHandler(router::accept).listen(9090);
+    this.vertx.createHttpServer().requestHandler(router::accept).listen(8080);
     ManagedChannel channel = VertxChannelBuilder
         .forAddress(vertx, System.getenv("GRPC_HOST"), Integer.valueOf(System.getenv("GRPC_PORT")))
         .usePlaintext(true)
