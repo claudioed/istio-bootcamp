@@ -164,7 +164,6 @@
           <appId>vertx-grpc-client</appId>
           <redeploy>true</redeploy>
         </configuration>
-
       </plugin>
 
     </plugins>
