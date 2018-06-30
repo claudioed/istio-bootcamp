@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "tech.claudioed.grpc.vertx";
+option java_outer_classname = "MessageProto";
+option objc_class_prefix = "MESSAGE";
+
+package message;
+
+service Message {
+  rpc getMessage (MessageRequest) returns (MessageResponse) {}
+}
+
+message MessageRequest {
+}
+
+message MessageResponse {
+  string message = 1;
+  string stack = 2;
+  string version = 3;
+}
