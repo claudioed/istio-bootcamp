@@ -1,0 +1,4 @@
+message:
+  message: Spring Boot Application
+  stack: spring-boot-rest
+  version: v1

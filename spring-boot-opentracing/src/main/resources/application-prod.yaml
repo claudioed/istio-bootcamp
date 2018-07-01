@@ -1,0 +1,4 @@
+message:
+  message: ${MESSAGE}
+  stack: ${STACK}
+  version: ${VERSION}
